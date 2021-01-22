@@ -1,5 +1,10 @@
 class UserController < ApplicationController
   def index
+    render json: [{"username"=>"Nayan Kline", 
+      "profile_image_url"=>"http://cdn.yourdomain.com/236x236.png/nayankline", 
+      "no_of_followers"=>"2.3M", "is_verified_user"=>false,
+      "top_followers" => ["Milli Gardiner","Colleen Marsh","Lennie Shelton"]
+      }]
   end
 
   def get_user_details
